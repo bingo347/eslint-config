@@ -1,0 +1,45 @@
+{
+  "name": "@bingo347/eslint-config",
+  "version": "0.0.0",
+  "description": "ESLint rules preset",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bingo347/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "typescript"
+  ],
+  "author": "Dmitry Belyaev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bingo347/eslint-config/issues"
+  },
+  "homepage": "https://github.com/bingo347/eslint-config#readme",
+  "devDependencies": {
+    "@types/eslint": "^7.2.6",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "@wessberg/rollup-plugin-ts": "^1.3.8",
+    "eslint": "^7.21.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "rollup": "^2.40.0",
+    "typescript": "^4.2.2"
+  },
+  "peerDependencies": {
+    "eslint": "^7.21.0",
+    "@typescript-eslint/parser": "^4.16.1",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "eslint-plugin-eslint-comments": "^3.2.0"
+  }
+}
