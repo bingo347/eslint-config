@@ -1,5 +1,5 @@
 import type { Linter } from 'eslint';
-import type { PrefixedRuleSet } from '../utils';
+import type { PrefixedRuleSet, RuleWithConfig } from '../utils';
 
 type CommentTypes =
     | 'eslint'
@@ -13,19 +13,19 @@ type CommentTypes =
     | 'globals';
 
 export type ESLintCommentsRules = PrefixedRuleSet<'eslint-comments', {
-    'disable-enable-pair': Linter.RuleEntry<[{
+    'disable-enable-pair': RuleWithConfig<{
         allowWholeFile: boolean;
-    }]>;
+    }>;
     'no-aggregating-enable': Linter.RuleEntry;
     'no-duplicate-disable': Linter.RuleEntry;
     'no-unlimited-disable': Linter.RuleEntry;
     'no-unused-disable': Linter.RuleEntry;
     'no-unused-enable': Linter.RuleEntry;
     'no-restricted-disable': Linter.RuleEntry<string[]>;
-    'no-use': Linter.RuleEntry<[{
+    'no-use': RuleWithConfig<{
         allow: CommentTypes[]
-    }]>;
-    'require-description': Linter.RuleEntry<[{
+    }>;
+    'require-description': RuleWithConfig<{
         ignore: CommentTypes[]
-    }]>;
+    }>;
 }>;
