@@ -1,15 +1,16 @@
 import type { ESLintCommentsRules } from './types';
+import { L } from '../utils';
 
 const rules: ESLintCommentsRules = {
-    'eslint-comments/disable-enable-pair': ['error', {
+    'eslint-comments/disable-enable-pair': [L.Error, {
         allowWholeFile: true,
     }],
-    'eslint-comments/no-aggregating-enable': 'error',
-    'eslint-comments/no-duplicate-disable': 'error',
-    'eslint-comments/no-unlimited-disable': 'error',
-    'eslint-comments/no-unused-disable': 'error',
-    'eslint-comments/no-unused-enable': 'error',
-    'eslint-comments/no-restricted-disable': ['warn',
+    'eslint-comments/no-aggregating-enable': L.Error,
+    'eslint-comments/no-duplicate-disable': L.Error,
+    'eslint-comments/no-unlimited-disable': L.Error,
+    'eslint-comments/no-unused-disable': L.Error,
+    'eslint-comments/no-unused-enable': L.Error,
+    'eslint-comments/no-restricted-disable': [L.Warn,
         'no-debugger',
         'no-dupe-args',
         'no-dupe-keys',
@@ -27,8 +28,8 @@ const rules: ESLintCommentsRules = {
         'no-this-before-super',
         'no-var',
     ],
-    'eslint-comments/no-use': 'off',
-    'eslint-comments/require-description': 'off',
+    'eslint-comments/no-use': L.Off,
+    'eslint-comments/require-description': L.Off,
 };
 
 export default rules;
