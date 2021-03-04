@@ -91,7 +91,6 @@ export type BestPracticesRules = PickESLintRules<
     | 'no-octal-escape'
     | 'no-param-reassign'
     | 'no-proto'
-    | 'no-restricted-properties'
     | 'no-return-assign'
     | 'no-return-await'
     | 'no-script-url'
@@ -123,8 +122,6 @@ export type StrictModeRules = PickESLintRules<'strict'>;
 export type VariablesRules = PickESLintRules<
     | 'no-delete-var'
     | 'no-label-var'
-    | 'no-restricted-globals'
-    | 'no-shadow-restricted-names'
     | 'no-undef'
     | 'no-undef-init'
     | 'no-undefined'
@@ -180,7 +177,6 @@ export type StylisticIssuesRules = PickESLintRules<
     | 'no-nested-ternary'
     | 'no-new-object'
     | 'no-plusplus'
-    | 'no-restricted-syntax'
     | 'no-tabs'
     | 'no-ternary'
     | 'no-trailing-spaces'
@@ -224,8 +220,6 @@ export type ECMAScript6Rules = PickESLintRules<
     | 'no-const-assign'
     | 'no-duplicate-import'
     | 'no-new-symbol'
-    | 'no-restricted-exports'
-    | 'no-restricted-imports'
     | 'no-this-before-super'
     | 'no-useless-computed-key'
     | 'no-useless-rename'
@@ -282,4 +276,13 @@ export type ExtendedFromTypescriptPluginRules = PickESLintRules<
     | 'semi'
     | 'space-before-function-paren'
     | 'space-infix-ops'
+>;
+
+export type RestrictedRules = PickESLintRules<
+    | 'no-restricted-syntax'
+    | 'no-restricted-properties'
+    | 'no-restricted-globals'
+    | 'no-restricted-imports'
+    | 'no-restricted-exports'
+    | 'no-shadow-restricted-names'
 >;

@@ -50,7 +50,6 @@ const rules: StylisticIssuesRules = {
     'no-nested-ternary': ['off'],
     'no-new-object': ['off'],
     'no-plusplus': ['off'],
-    'no-restricted-syntax': ['off'],
     'no-tabs': ['off'],
     'no-ternary': ['off'],
     'no-trailing-spaces': ['off'],

@@ -3,8 +3,6 @@ import type { VariablesRules } from './types';
 const rules: VariablesRules = {
     'no-delete-var': ['off'],
     'no-label-var': ['off'],
-    'no-restricted-globals': ['off'],
-    'no-shadow-restricted-names': ['off'],
     'no-undef': ['off'],
     'no-undef-init': ['off'],
     'no-undefined': ['off']

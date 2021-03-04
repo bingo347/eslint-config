@@ -11,8 +11,6 @@ const rules: ECMAScript6Rules = {
     'no-const-assign': ['off'],
     'no-duplicate-import': ['off'],
     'no-new-symbol': ['off'],
-    'no-restricted-exports': ['off'],
-    'no-restricted-imports': ['off'],
     'no-this-before-super': ['off'],
     'no-useless-computed-key': ['off'],
     'no-useless-rename': ['off'],

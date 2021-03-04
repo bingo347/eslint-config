@@ -45,7 +45,6 @@ const rules: BestPracticesRules = {
     'no-octal-escape': ['off'],
     'no-param-reassign': ['off'],
     'no-proto': ['off'],
-    'no-restricted-properties': ['off'],
     'no-return-assign': ['off'],
     'no-return-await': ['off'],
     'no-script-url': ['off'],

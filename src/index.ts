@@ -5,6 +5,7 @@ import ESLintBaseStrictModeRules from './eslint-base/strict-mode-rules';
 import ESLintBaseStylisticIssuesRules from './eslint-base/stylistic-issues-rules';
 import ESLintBaseVariablesRules from './eslint-base/variables-rules';
 import ESLintBaseExtendedFromTypescriptPluginRules from './eslint-base/extended-from-typescript-plugin-rules';
+import ESLintBaseRestrictedRules from './eslint-base/restricted-rules';
 import ESLintCommentsRules from './eslint-comments/rules';
 
 export default {
@@ -17,5 +18,6 @@ export default {
         ...ESLintBaseStylisticIssuesRules,
         ...ESLintBaseVariablesRules,
         ...ESLintBaseExtendedFromTypescriptPluginRules,
+        ...ESLintBaseRestrictedRules,
     }
 };
