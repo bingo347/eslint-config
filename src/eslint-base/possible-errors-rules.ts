@@ -1,4 +1,4 @@
-import type { PossibleErrorsRules } from './types';
+import type {PossibleErrorsRules} from './types';
 
 const rules: PossibleErrorsRules = {
     'for-direction': ['off'],
@@ -41,7 +41,7 @@ const rules: PossibleErrorsRules = {
     'no-useless-backreference': ['off'],
     'require-atomic-updates': ['off'],
     'use-isnan': ['off'],
-    'valid-typeof': ['off']
+    'valid-typeof': ['off'],
 };
 
 export default rules;

@@ -1,6 +1,6 @@
-import type { Linter } from 'eslint';
-import type { ExtendedFromTypescriptPluginRules as ESLintRules } from '../../eslint-base/types';
-import type { PrefixedRuleSet, RuleWithConfig } from '../../utils';
+import type {Linter} from 'eslint';
+import type {ExtendedFromTypescriptPluginRules as ESLintRules} from '../../eslint-base/types';
+import type {PrefixedRuleSet, RuleWithConfig} from '../../utils';
 
 type GetESLintRuleOptions<R extends keyof ESLintRules, N extends 0 | 1 = 0>
     = ESLintRules[R] extends Linter.RuleEntry<infer Options> ? Options[N] : never;
@@ -30,7 +30,7 @@ export type TypescriptExtRules = PrefixedRuleSet<'@typescript-eslint', {
         GetESLintRuleOptions<'lines-between-class-members'>,
         GetESLintRuleOptions<'lines-between-class-members', 1> & {
             exceptAfterOverload?: boolean;
-        }
+        },
     ]>;
 
     'no-array-constructor':  ESLintRules['no-array-constructor'];

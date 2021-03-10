@@ -1,4 +1,4 @@
-import type { StrictModeRules } from './types';
+import type {StrictModeRules} from './types';
 
 const rules: StrictModeRules = {
     'strict': ['off'],

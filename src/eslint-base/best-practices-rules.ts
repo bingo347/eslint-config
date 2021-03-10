@@ -1,4 +1,4 @@
-import type { BestPracticesRules } from './types';
+import type {BestPracticesRules} from './types';
 
 const rules: BestPracticesRules = {
     'accessor-pairs': ['off'],
@@ -68,7 +68,7 @@ const rules: BestPracticesRules = {
     'require-unicode-regexp': ['off'],
     'vars-on-top': ['off'],
     'wrap-iife': ['off'],
-    'yoda': ['off']
+    'yoda': ['off'],
 };
 
 export default rules;

@@ -1,5 +1,5 @@
-import type { RestrictedRules } from './types';
-import { L } from '../utils';
+import type {RestrictedRules} from './types';
+import {L} from '../utils';
 
 const rules: RestrictedRules = {
     'no-restricted-syntax':       [L.Error],

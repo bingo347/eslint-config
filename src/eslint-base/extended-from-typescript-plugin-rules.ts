@@ -1,5 +1,5 @@
-import type { ExtendedFromTypescriptPluginRules } from './types';
-import { L } from '../utils';
+import type {ExtendedFromTypescriptPluginRules} from './types';
+import {L} from '../utils';
 
 const rules: ExtendedFromTypescriptPluginRules = {
     'brace-style': L.Off,
@@ -36,7 +36,7 @@ const rules: ExtendedFromTypescriptPluginRules = {
     'return-await': L.Off,
     'semi': L.Off,
     'space-before-function-paren': L.Off,
-    'space-infix-ops': L.Off
+    'space-infix-ops': L.Off,
 };
 
 export default rules;

@@ -1,5 +1,5 @@
-import type { ESLintCommentsRules } from './types';
-import { L } from '../utils';
+import type {ESLintCommentsRules} from './types';
+import {L} from '../utils';
 
 const rules: ESLintCommentsRules = {
     'eslint-comments/disable-enable-pair': [L.Error, {

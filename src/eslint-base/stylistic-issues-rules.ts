@@ -1,4 +1,4 @@
-import type { StylisticIssuesRules } from './types';
+import type {StylisticIssuesRules} from './types';
 
 const rules: StylisticIssuesRules = {
     'array-bracket-newline': ['off'],
@@ -79,7 +79,7 @@ const rules: StylisticIssuesRules = {
     'switch-colon-spacing': ['off'],
     'template-tag-spacing': ['off'],
     'unicode-bom': ['off'],
-    'wrap-regex': ['off']
+    'wrap-regex': ['off'],
 };
 
 export default rules;

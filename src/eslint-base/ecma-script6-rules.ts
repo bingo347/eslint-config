@@ -1,4 +1,4 @@
-import type { ECMAScript6Rules } from './types';
+import type {ECMAScript6Rules} from './types';
 
 const rules: ECMAScript6Rules = {
     'arrow-body-style': ['off'],
@@ -28,7 +28,7 @@ const rules: ECMAScript6Rules = {
     'sort-imports': ['off'],
     'symbol-description': ['off'],
     'template-curly-spacing': ['off'],
-    'yield-star-spacing': ['off']
+    'yield-star-spacing': ['off'],
 };
 
 export default rules;

@@ -1,5 +1,5 @@
-import type { Linter } from 'eslint';
-import type { PrefixedRuleSet, RuleWithConfig } from '../utils';
+import type {Linter} from 'eslint';
+import type {PrefixedRuleSet, RuleWithConfig} from '../utils';
 
 type CommentTypes =
     | 'eslint'

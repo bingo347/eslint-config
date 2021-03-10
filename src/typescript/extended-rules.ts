@@ -1,9 +1,9 @@
-import type { TypescriptExtRules } from './types/extended';
-import { L } from '../utils';
+import type {TypescriptExtRules} from './types/extended';
+import {L} from '../utils';
 
 const rules: TypescriptExtRules = {
     '@typescript-eslint/brace-style': [L.Error, '1tbs', {
-        allowSingleLine: true
+        allowSingleLine: true,
     }],
     '@typescript-eslint/comma-dangle':       [L.Warn, 'always-multiline'],
     '@typescript-eslint/comma-spacing':      L.Warn,
@@ -26,7 +26,7 @@ const rules: TypescriptExtRules = {
         },
         ArrayExpression:        1,
         ObjectExpression:       1,
-        ImportDeclaration:      1,
+        ImportDeclaration: 1,
         flatTernaryExpressions: false,
         ignoreComments:         true,
     }],
@@ -92,7 +92,7 @@ const rules: TypescriptExtRules = {
         int32Hint: true,
     }],
     '@typescript-eslint/no-use-before-define': L.Off,
-    "@typescript-eslint/no-extra-parens": L.Off,
+    '@typescript-eslint/no-extra-parens': L.Off,
 };
 
 export default rules;
