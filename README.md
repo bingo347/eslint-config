@@ -11,7 +11,7 @@ npm i -D @bingo347/eslint-config eslint typescript @typescript-eslint/parser @ty
 ## Configuration
 
 Configure [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
-Add .eslintrc.js:
+<br>Add .eslintrc.js:
 
 ```js
 const path = require('path');
