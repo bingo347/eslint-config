@@ -7,6 +7,7 @@ import ESLintBaseStylisticIssuesRules from './eslint-base/stylistic-issues-rules
 import ESLintBaseVariablesRules from './eslint-base/variables-rules';
 import ESLintBaseExtendedFromTypescriptPluginRules from './eslint-base/extended-from-typescript-plugin-rules';
 import ESLintBaseRestrictedRules from './eslint-base/restricted-rules';
+import typescriptBaseRules from './typescript/base-rules';
 import TypescriptExtRules from './typescript/extended-rules';
 
 export default {
@@ -20,6 +21,7 @@ export default {
         ...ESLintBaseVariablesRules,
         ...ESLintBaseExtendedFromTypescriptPluginRules,
         ...ESLintBaseRestrictedRules,
+        ...typescriptBaseRules,
         ...TypescriptExtRules,
     },
 };
