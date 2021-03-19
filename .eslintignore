@@ -1,3 +1,4 @@
 node_modules
+/rollup.config.js
 /index.js
 /.*
