@@ -51,7 +51,7 @@ const rules: TypescriptExtRules = {
         ignoreNumericLiteralTypes:     true,
         ignoreReadonlyClassProperties: true,
         ignoreArrayIndexes:            true,
-        ignore:                        [-1, 0, .25, .5, 1, 2, 4, 8, 10, 16, 100, 1000],
+        ignore:                        [-1, 0, .25, .5, 1, 2, 4, 8, 10, 16, 32, 64, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7],
     }],
     '@typescript-eslint/no-redeclare': [L.Error, {
         ignoreDeclarationMerge: true,
