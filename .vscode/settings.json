@@ -1,5 +1,18 @@
 {
     "cSpell.words": [
-        "isnan"
+        "backreference",
+        "builtins",
+        "cond",
+        "denylist",
+        "destructured",
+        "eqeqeq",
+        "iife",
+        "isnan",
+        "linebreak",
+        "nocheck",
+        "nonoctal",
+        "plusplus",
+        "singleline",
+        "typedefs"
     ]
 }
