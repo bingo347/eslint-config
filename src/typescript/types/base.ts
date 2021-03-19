@@ -269,7 +269,7 @@ export type TypescriptRules = PrefixedRuleSet<'@typescript-eslint', {
         variableDeclarationIgnoreFunction?: boolean;
     }]>;
     'unbound-method': Linter.RuleEntry<[{
-        ignoreStatic?: boolean
+        ignoreStatic?: boolean;
     }]>;
     'unified-signatures': Linter.RuleEntry;
 }> & NamingConventionRule & MemberOrderingRule;

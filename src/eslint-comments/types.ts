@@ -23,9 +23,9 @@ export type ESLintCommentsRules = PrefixedRuleSet<'eslint-comments', {
     'no-unused-enable': Linter.RuleEntry;
     'no-restricted-disable': Linter.RuleEntry<string[]>;
     'no-use': RuleWithConfig<{
-        allow: CommentTypes[]
+        allow: CommentTypes[];
     }>;
     'require-description': RuleWithConfig<{
-        ignore: CommentTypes[]
+        ignore: CommentTypes[];
     }>;
 }>;
