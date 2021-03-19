@@ -26,7 +26,7 @@ const rules: TypescriptExtRules = {
         },
         ArrayExpression:        1,
         ObjectExpression:       1,
-        ImportDeclaration: 1,
+        ImportDeclaration:      1,
         flatTernaryExpressions: false,
         ignoreComments:         true,
     }],
@@ -92,7 +92,7 @@ const rules: TypescriptExtRules = {
         int32Hint: true,
     }],
     '@typescript-eslint/no-use-before-define': L.Off,
-    '@typescript-eslint/no-extra-parens': L.Off,
+    '@typescript-eslint/no-extra-parens':      L.Off,
 };
 
 export default rules;

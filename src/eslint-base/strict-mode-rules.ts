@@ -1,7 +1,7 @@
 import type {StrictModeRules} from './types';
 
 const rules: StrictModeRules = {
-    'strict': ['off'],
+    strict: ['off'],
 };
 
 export default rules;
