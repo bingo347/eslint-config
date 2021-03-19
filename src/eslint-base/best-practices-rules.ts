@@ -40,6 +40,7 @@ const rules: BestPracticesRules = {
         exceptions:        {
             Property:         true,
             TSTypeAnnotation: true,
+            TSEnumMember:     true,
         },
     }],
     'no-octal':          L.Warn,
