@@ -149,7 +149,7 @@ const rules: StylisticIssuesRules = {
             markers:    ['/', '!', '@', '#'],
         },
         block: {
-            exceptions: ['*'],
+            exceptions: ['*', '@__INLINE__', '@__NOINLINE__', '@__PURE__'],
             markers:    ['*'],
             balanced:   true,
         },
