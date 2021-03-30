@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "pub": "npm run build && npm publish --access public"
+    "prepub": "npm run build",
+    "pub": "npm publish --access public"
   },
   "repository": {
     "type": "git",
