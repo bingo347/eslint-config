@@ -11,6 +11,11 @@ import typescriptBaseRules from './typescript/base-rules';
 import TypescriptExtRules from './typescript/extended-rules';
 
 export default {
+    parser:  '@typescript-eslint/parser',
+    plugins: [
+        '@typescript-eslint',
+        'eslint-comments',
+    ],
     rules: {
         ...ESLintCommentsRules,
         ...ESLintBaseBestPracticesRules,
