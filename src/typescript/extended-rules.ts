@@ -1,6 +1,16 @@
 import type {TypescriptExtRules} from './types/extended';
 import {L} from '../utils';
 
+const ignoredMoMagicNumbers = [-1, 0, 1];
+for (let i = 1; i < 16; i++) {
+    ignoredMoMagicNumbers.push(1 << i);
+    ignoredMoMagicNumbers.push(+`1e+${i}`);
+}
+for (let i = 1; i < 10; i++) {
+    ignoredMoMagicNumbers.push(1 / (1 << i));
+    ignoredMoMagicNumbers.push(+`1e-${i}`);
+}
+
 const rules: TypescriptExtRules = {
     '@typescript-eslint/brace-style': [L.Error, '1tbs', {
         allowSingleLine: true,
@@ -51,34 +61,7 @@ const rules: TypescriptExtRules = {
         ignoreNumericLiteralTypes:     true,
         ignoreReadonlyClassProperties: true,
         ignoreArrayIndexes:            true,
-        ignore:                        [
-            -1,
-            0,
-            .125,
-            .25,
-            .5,
-            .75,
-            1,
-            2,
-            4,
-            8,
-            16,
-            32,
-            64,
-            128,
-            256,
-            512,
-            1024,
-            1e1,
-            1e2,
-            1e3,
-            1e4,
-            1e5,
-            1e6,
-            1e7,
-            1e8,
-            1e9,
-        ],
+        ignore:                        ignoredMoMagicNumbers,
     }],
     '@typescript-eslint/no-redeclare': [L.Error, {
         ignoreDeclarationMerge: true,
