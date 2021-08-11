@@ -1,7 +1,7 @@
 import type {Linter} from 'eslint';
-import type {PrefixedRuleSet} from '../../utils';
-import type {NamingConventionRule} from './naming-convention';
 import type {MemberOrderingRule} from './member-ordering';
+import type {NamingConventionRule} from './naming-convention';
+import type {PrefixedRuleSet} from '../../utils';
 
 type ArrayTypeOption = 'array' | 'generic' | 'array-simple';
 type BanTSCommentOption = boolean | 'allow-with-description';
