@@ -11,26 +11,21 @@ npm i -D @bingo347/eslint-config eslint typescript
 ## Configuration
 
 Configure [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) \
-Add .eslintrc.js:
+Add .eslintrc:
 
-```js
-const path = require('path');
-
-module.exports = {
-    parserOptions: {
-        project: [
-            path.resolve(__dirname, './tsconfig.json')
-        ],
-        tsconfigRootDir: __dirname
+```json
+{
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "tsconfigRootDir": "."
     },
-    extends: [
-        '@bingo347'
+    "extends": [
+        "@bingo347"
     ],
-    rules: {
+    "rules": {
         // your overrides here
     }
-};
-
+}
 ```
 
 ## License
