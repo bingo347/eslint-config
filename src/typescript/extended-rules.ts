@@ -63,9 +63,6 @@ const rules: TypescriptExtRules = {
         ignoreArrayIndexes:            true,
         ignore:                        ignoredMoMagicNumbers,
     }],
-    '@typescript-eslint/no-redeclare': [L.Error, {
-        ignoreDeclarationMerge: true,
-    }],
     '@typescript-eslint/no-shadow': [L.Warn, {
         ignoreTypeValueShadow:                      true,
         ignoreFunctionTypeParameterNameValueShadow: false,
@@ -103,6 +100,7 @@ const rules: TypescriptExtRules = {
     }],
     '@typescript-eslint/no-use-before-define': L.Off,
     '@typescript-eslint/no-extra-parens':      L.Off,
+    '@typescript-eslint/no-redeclare':         L.Off,
 };
 
 export default rules;
