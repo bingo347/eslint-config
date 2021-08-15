@@ -8,6 +8,7 @@ import ESLintBaseStylisticIssuesRules from './eslint-base/stylistic-issues-rules
 import ESLintBaseVariablesRules from './eslint-base/variables-rules';
 import ESLintCommentsRules from './eslint-comments/rules';
 import ImportRules from './import/rules';
+import OptimizeRegexRules from './optimize-regex/rules';
 import typescriptBaseRules from './typescript/base-rules';
 import TypescriptExtRules from './typescript/extended-rules';
 
@@ -37,5 +38,6 @@ export default {
         ...typescriptBaseRules,
         ...TypescriptExtRules,
         ...ImportRules,
+        ...OptimizeRegexRules,
     },
 };
