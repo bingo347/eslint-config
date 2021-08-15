@@ -13,7 +13,7 @@ npm i -D @bingo347/eslint-config eslint typescript
 Configure [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) \
 Add .eslintrc:
 
-```json
+```json5
 {
     "parserOptions": {
         "project": "./tsconfig.json",
