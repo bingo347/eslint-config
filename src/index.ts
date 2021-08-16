@@ -18,6 +18,7 @@ export default {
         '@typescript-eslint',
         'eslint-comments',
         'import',
+        'optimize-regex',
     ],
     settings: {
         'import/core-modules': ['electron', 'vscode'],
