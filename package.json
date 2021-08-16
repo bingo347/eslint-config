@@ -1,6 +1,6 @@
 {
   "name": "@bingo347/eslint-config",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "ESLint rules preset",
   "main": "index.js",
   "files": [
