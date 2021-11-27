@@ -25,6 +25,9 @@ const rules: TypescriptExtRules = {
     }],
     '@typescript-eslint/func-call-spacing': [L.Error, 'never'],
     '@typescript-eslint/indent':            [L.Error, 4, {
+        ignoredNodes: [
+            'TSTypeParameterInstantiation',
+        ],
         SwitchCase:          1,
         MemberExpression:    1,
         FunctionDeclaration: {
