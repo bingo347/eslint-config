@@ -29,20 +29,20 @@
   },
   "homepage": "https://github.com/bingo347/eslint-config#readme",
   "devDependencies": {
-    "@types/eslint": "^8.2.1",
-    "@types/node": "^16.11.17",
-    "eslint": "^8.5.0",
-    "rollup": "^2.62.0",
+    "@types/eslint": "^8.4.1",
+    "@types/node": "^16.11.25",
+    "eslint": "^8.9.0",
+    "rollup": "^2.67.2",
     "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-ts": "^2.0.4",
-    "typescript": "^4.5.4"
+    "rollup-plugin-ts": "^2.0.5",
+    "typescript": "^4.5.5"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.8.0",
-    "@typescript-eslint/parser": "^5.8.0",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
     "eslint": ">=7",
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-optimize-regex": "^1.2.1",
     "typescript": ">=4"
   }
