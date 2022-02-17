@@ -132,8 +132,65 @@ const rules: TypescriptRules = {
         allowDestructuring: true,
         allowedNames:       [],
     }],
+    '@typescript-eslint/no-unnecessary-type-constraint': L.Error,
+    '@typescript-eslint/naming-convention':              [
+        L.Warn,
+        {
+            selector: 'default',
+            format:   [
+                'camelCase',
+            ],
+            leadingUnderscore: 'allowSingleOrDouble',
+        },
+        {
+            selector: ['typeLike', 'enumMember'],
+            format:   [
+                'PascalCase',
+            ],
+        },
+        {
+            selector: 'variableLike',
+            format:   [
+                'camelCase',
+            ],
+            leadingUnderscore: 'allowSingleOrDouble',
+        },
+        {
+            selector: 'memberLike',
+            format:   [
+                'camelCase',
+                'PascalCase',
+                'UPPER_CASE',
+            ],
+            leadingUnderscore: 'allowSingleOrDouble',
+        },
+        {
+            selector: 'variable',
+            format:   [
+                'camelCase',
+                'PascalCase',
+                'UPPER_CASE',
+            ],
+            modifiers: [
+                'const',
+            ],
+            leadingUnderscore: 'allowSingleOrDouble',
+        },
+        {
+            selector: 'variable',
+            format:   [
+                'camelCase',
+                'PascalCase',
+                'snake_case',
+                'UPPER_CASE',
+            ],
+            modifiers: [
+                'destructured',
+            ],
+            leadingUnderscore: 'allowSingleOrDouble',
+        },
+    ],
     '@typescript-eslint/no-unnecessary-type-arguments':        L.Off,
-    '@typescript-eslint/no-unnecessary-type-constraint':       L.Error,
     '@typescript-eslint/consistent-type-definitions':          L.Off,
     '@typescript-eslint/no-base-to-string':                    L.Off,
     '@typescript-eslint/no-dynamic-delete':                    L.Off,
@@ -152,7 +209,6 @@ const rules: TypescriptRules = {
     '@typescript-eslint/sort-type-union-intersection-members': L.Off,
     '@typescript-eslint/triple-slash-reference':               L.Off,
     '@typescript-eslint/typedef':                              L.Off,
-    '@typescript-eslint/naming-convention':                    L.Off,
     '@typescript-eslint/member-ordering':                      L.Off,
 };
 

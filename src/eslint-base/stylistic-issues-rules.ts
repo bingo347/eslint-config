@@ -18,15 +18,7 @@ const rules: StylisticIssuesRules = {
             minItems: ARRAY_PATTERN_MAX_ITEMS_IN_SINGLELINE,
         },
     }],
-    'block-spacing': ['warn', 'always'],
-    camelcase:       ['warn', {
-        properties:          'always',
-        ignoreDestructuring: true,
-        // @ts-expect-error: missing option in rule type
-        ignoreImports:       true,
-        ignoreGlobals:       true,
-        allow:               [],
-    }],
+    'block-spacing':             ['warn', 'always'],
     'comma-style':               ['warn', 'last'],
     // @ts-expect-error: missing option enforceForClassMembers in rule type
     'computed-property-spacing': ['warn', 'never', {
@@ -194,6 +186,7 @@ const rules: StylisticIssuesRules = {
     'sort-vars':                        L.Off,
     'unicode-bom':                      L.Off,
     'wrap-regex':                       L.Off,
+    camelcase:                          L.Off,
 };
 
 export default rules;
