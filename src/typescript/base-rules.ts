@@ -132,7 +132,7 @@ const rules: TypescriptRules = {
         allowDestructuring: true,
         allowedNames:       [],
     }],
-    '@typescript-eslint/no-unnecessary-type-arguments':        L.Warn,
+    '@typescript-eslint/no-unnecessary-type-arguments':        L.Off,
     '@typescript-eslint/no-unnecessary-type-constraint':       L.Error,
     '@typescript-eslint/consistent-type-definitions':          L.Off,
     '@typescript-eslint/no-base-to-string':                    L.Off,
