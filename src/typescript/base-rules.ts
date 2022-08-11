@@ -165,6 +165,15 @@ const rules: TypescriptRules = {
             leadingUnderscore: 'allowSingleOrDouble',
         },
         {
+            selector:  'memberLike',
+            modifiers: ['requiresQuotes'],
+            format:    [],
+            custom:    {
+                regex: '.*',
+                match: true,
+            },
+        },
+        {
             selector: 'variable',
             format:   [
                 'camelCase',
