@@ -6,10 +6,10 @@ const rules: ESLintCommentsRules = {
         allowWholeFile: true,
     }],
     'eslint-comments/no-aggregating-enable': L.Error,
-    'eslint-comments/no-duplicate-disable':  L.Error,
-    'eslint-comments/no-unlimited-disable':  L.Error,
-    'eslint-comments/no-unused-disable':     L.Error,
-    'eslint-comments/no-unused-enable':      L.Error,
+    'eslint-comments/no-duplicate-disable': L.Error,
+    'eslint-comments/no-unlimited-disable': L.Error,
+    'eslint-comments/no-unused-disable': L.Error,
+    'eslint-comments/no-unused-enable': L.Error,
     'eslint-comments/no-restricted-disable': [L.Warn,
         'no-debugger',
         'no-dupe-keys',
@@ -28,7 +28,7 @@ const rules: ESLintCommentsRules = {
         'no-var',
         '@typescript-eslint/no-loop-func',
         '@typescript-eslint/no-magic-numbers'],
-    'eslint-comments/no-use':              L.Off,
+    'eslint-comments/no-use': L.Off,
     'eslint-comments/require-description': L.Off,
 };
 

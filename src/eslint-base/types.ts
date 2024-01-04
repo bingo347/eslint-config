@@ -253,7 +253,6 @@ export type ExtendedFromTypescriptPluginRules = PickESLintRules<
     | 'lines-between-class-members'
     | 'no-array-constructor'
     | 'no-dupe-class-members'
-    | 'no-duplicate-imports'
     | 'no-empty-function'
     | 'no-extra-parens'
     | 'no-extra-semi'
@@ -276,6 +275,10 @@ export type ExtendedFromTypescriptPluginRules = PickESLintRules<
     | 'semi'
     | 'space-before-function-paren'
     | 'space-infix-ops'
+    | 'class-methods-use-this'
+    | 'max-params'
+    | 'no-restricted-imports'
+    | 'prefer-destructuring'
 >;
 
 export type RestrictedRules = PickESLintRules<

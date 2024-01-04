@@ -20,9 +20,20 @@
         "noFallthroughCasesInSwitch": true,
         "noUnusedLocals": true,
         "outDir": ".",
-        "lib": ["ES2020"],
+        "lib": [
+            "ES2020"
+        ],
         "types": []
     },
-    "include": ["**/*.ts"],
-    "exclude": []
+    "include": [
+        "**/*.ts",
+        "check-missing-rules.ts",
+        "rollup.config.ts"
+    ],
+    "exclude": [],
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    }
 }

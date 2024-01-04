@@ -1,19 +1,20 @@
-import ESLintBaseBestPracticesRules from './eslint-base/best-practices-rules';
-import ESLintBaseECMAScript6Rules from './eslint-base/ecma-script6-rules';
-import ESLintBaseExtendedFromTypescriptPluginRules from './eslint-base/extended-from-typescript-plugin-rules';
-import ESLintBasePossibleErrorsRules from './eslint-base/possible-errors-rules';
-import ESLintBaseRestrictedRules from './eslint-base/restricted-rules';
-import ESLintBaseStrictModeRules from './eslint-base/strict-mode-rules';
-import ESLintBaseStylisticIssuesRules from './eslint-base/stylistic-issues-rules';
-import ESLintBaseVariablesRules from './eslint-base/variables-rules';
-import ESLintCommentsRules from './eslint-comments/rules';
-import ImportRules from './import/rules';
-import OptimizeRegexRules from './optimize-regex/rules';
+import eslintBaseBestPracticesRules from './eslint-base/best-practices-rules';
+import eslintBaseECMAScript6Rules from './eslint-base/ecma-script6-rules';
+import eslintBaseExtendedFromTypescriptPluginRules from './eslint-base/extended-from-typescript-plugin-rules';
+import eslintBasePossibleErrorsRules from './eslint-base/possible-errors-rules';
+import eslintBaseRestrictedRules from './eslint-base/restricted-rules';
+import eslintBaseStrictModeRules from './eslint-base/strict-mode-rules';
+import eslintBaseStylisticIssuesRules from './eslint-base/stylistic-issues-rules';
+import eslintBaseVariablesRules from './eslint-base/variables-rules';
+import eslintCommentsRules from './eslint-comments/rules';
+import importRules from './import/rules';
+import optimizeRegexRules from './optimize-regex/rules';
 import typescriptBaseRules from './typescript/base-rules';
-import TypescriptExtRules from './typescript/extended-rules';
+import typescriptExtRules from './typescript/extended-rules';
+import typescriptStylisticRules from './typescript/stylistic-rules';
 
 export default {
-    parser:  '@typescript-eslint/parser',
+    parser: '@typescript-eslint/parser',
     plugins: [
         '@typescript-eslint',
         'eslint-comments',
@@ -27,18 +28,19 @@ export default {
         'plugin:import/typescript',
     ],
     rules: {
-        ...ESLintBaseBestPracticesRules,
-        ...ESLintBaseECMAScript6Rules,
-        ...ESLintBaseExtendedFromTypescriptPluginRules,
-        ...ESLintBasePossibleErrorsRules,
-        ...ESLintBaseRestrictedRules,
-        ...ESLintBaseStrictModeRules,
-        ...ESLintBaseStylisticIssuesRules,
-        ...ESLintBaseVariablesRules,
-        ...ESLintCommentsRules,
-        ...ImportRules,
-        ...OptimizeRegexRules,
+        ...eslintBaseBestPracticesRules,
+        ...eslintBaseECMAScript6Rules,
+        ...eslintBaseExtendedFromTypescriptPluginRules,
+        ...eslintBasePossibleErrorsRules,
+        ...eslintBaseRestrictedRules,
+        ...eslintBaseStrictModeRules,
+        ...eslintBaseStylisticIssuesRules,
+        ...eslintBaseVariablesRules,
+        ...eslintCommentsRules,
+        ...importRules,
+        ...optimizeRegexRules,
         ...typescriptBaseRules,
-        ...TypescriptExtRules,
+        ...typescriptExtRules,
+        ...typescriptStylisticRules,
     },
 };

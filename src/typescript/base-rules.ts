@@ -3,8 +3,8 @@ import {L} from '../utils';
 
 const rules: TypescriptRules = {
     '@typescript-eslint/adjacent-overload-signatures': L.Error,
-    '@typescript-eslint/array-type':                   [L.Error, {
-        default:  'array',
+    '@typescript-eslint/array-type': [L.Error, {
+        default: 'array',
         readonly: 'array',
     }],
     '@typescript-eslint/await-thenable': L.Error,
@@ -12,152 +12,154 @@ const rules: TypescriptRules = {
         'ts-expect-error': 'allow-with-description',
     }],
     '@typescript-eslint/ban-tslint-comment': L.Error,
-    '@typescript-eslint/ban-types':          [L.Error, {
+    '@typescript-eslint/ban-types': [L.Error, {
         extendDefaults: true,
-        types:          {},
+        types: {},
     }],
-    '@typescript-eslint/class-literal-property-style':    [L.Error, 'fields'],
+    '@typescript-eslint/class-literal-property-style': [L.Error, 'fields'],
     '@typescript-eslint/consistent-indexed-object-style': [L.Warn, 'record'],
-    '@typescript-eslint/consistent-type-assertions':      [L.Error, {
-        assertionStyle:              'as',
+    '@typescript-eslint/consistent-type-assertions': [L.Error, {
+        assertionStyle: 'as',
         objectLiteralTypeAssertions: 'allow-as-parameter',
     }],
     '@typescript-eslint/consistent-type-imports': [L.Error, {
-        prefer:                  'type-imports',
+        prefer: 'type-imports',
         disallowTypeAnnotations: true,
     }],
     '@typescript-eslint/explicit-member-accessibility': [L.Error, {
         accessibility: 'explicit',
-        overrides:     {
+        overrides: {
             constructors: 'no-public',
         },
     }],
     '@typescript-eslint/explicit-module-boundary-types': [L.Warn, {
         allowedNames: [],
     }],
-    '@typescript-eslint/member-delimiter-style':       L.Error,
-    '@typescript-eslint/method-signature-style':       [L.Error, 'method'],
+    '@typescript-eslint/member-delimiter-style': L.Error,
+    '@typescript-eslint/method-signature-style': [L.Error, 'method'],
     '@typescript-eslint/no-confusing-void-expression': [L.Warn, {
         ignoreArrowShorthand: true,
-        ignoreVoidOperator:   true,
+        ignoreVoidOperator: true,
     }],
     '@typescript-eslint/no-empty-interface': [L.Warn, {
         allowSingleExtends: true,
     }],
     '@typescript-eslint/no-explicit-any': [L.Warn, {
-        fixToUnknown:   true,
+        fixToUnknown: true,
         ignoreRestArgs: true,
     }],
     '@typescript-eslint/no-extra-non-null-assertion': L.Error,
-    '@typescript-eslint/no-extraneous-class':         L.Error,
-    '@typescript-eslint/no-floating-promises':        [L.Warn, {
+    '@typescript-eslint/no-extraneous-class': L.Error,
+    '@typescript-eslint/no-floating-promises': [L.Warn, {
         ignoreVoid: true,
         ignoreIIFE: true,
     }],
-    '@typescript-eslint/no-for-in-array':      L.Error,
-    '@typescript-eslint/no-inferrable-types':  L.Warn,
+    '@typescript-eslint/no-for-in-array': L.Error,
+    '@typescript-eslint/no-inferrable-types': L.Warn,
     '@typescript-eslint/no-invalid-void-type': [L.Error, {
         allowInGenericTypeArguments: true,
-        allowAsThisParameter:        true,
+        allowAsThisParameter: true,
     }],
-    '@typescript-eslint/no-misused-new':      L.Error,
+    '@typescript-eslint/no-misused-new': L.Error,
     '@typescript-eslint/no-misused-promises': [L.Error, {
         checksVoidReturn: false,
     }],
     '@typescript-eslint/no-namespace': [L.Warn, {
-        allowDeclarations:    true,
+        allowDeclarations: true,
         allowDefinitionFiles: true,
     }],
-    '@typescript-eslint/no-non-null-asserted-optional-chain':    L.Error,
+    '@typescript-eslint/no-non-null-asserted-optional-chain': L.Error,
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': L.Warn,
-    '@typescript-eslint/no-unnecessary-condition':               [L.Warn, {
+    '@typescript-eslint/no-unnecessary-condition': [L.Warn, {
         allowConstantLoopConditions: true,
     }],
-    '@typescript-eslint/no-unnecessary-type-assertion':     L.Warn,
-    '@typescript-eslint/no-unsafe-assignment':              L.Warn,
-    '@typescript-eslint/no-unsafe-call':                    L.Warn,
-    '@typescript-eslint/no-unsafe-member-access':           L.Warn,
-    '@typescript-eslint/no-unsafe-return':                  L.Warn,
+    '@typescript-eslint/no-unnecessary-type-assertion': L.Warn,
+    '@typescript-eslint/no-unsafe-assignment': L.Warn,
+    '@typescript-eslint/no-unsafe-call': L.Warn,
+    '@typescript-eslint/no-unsafe-member-access': L.Warn,
+    '@typescript-eslint/no-unsafe-return': L.Warn,
     '@typescript-eslint/non-nullable-type-assertion-style': L.Warn,
-    '@typescript-eslint/prefer-as-const':                   L.Warn,
-    '@typescript-eslint/prefer-for-of':                     L.Warn,
-    '@typescript-eslint/prefer-function-type':              L.Warn,
-    '@typescript-eslint/prefer-includes':                   L.Warn,
-    '@typescript-eslint/prefer-literal-enum-member':        L.Warn,
-    '@typescript-eslint/prefer-nullish-coalescing':         [L.Warn, {
-        ignoreConditionalTests:        true,
+    '@typescript-eslint/prefer-as-const': L.Warn,
+    '@typescript-eslint/prefer-for-of': L.Warn,
+    '@typescript-eslint/prefer-function-type': L.Warn,
+    '@typescript-eslint/prefer-includes': L.Warn,
+    '@typescript-eslint/prefer-literal-enum-member': L.Warn,
+    '@typescript-eslint/prefer-nullish-coalescing': [L.Warn, {
+        ignoreConditionalTests: true,
         ignoreMixedLogicalExpressions: true,
     }],
-    '@typescript-eslint/prefer-optional-chain':          L.Warn,
-    '@typescript-eslint/prefer-readonly':                L.Warn,
+    '@typescript-eslint/prefer-optional-chain': L.Warn,
+    '@typescript-eslint/prefer-readonly': L.Warn,
     '@typescript-eslint/prefer-string-starts-ends-with': L.Error,
-    '@typescript-eslint/prefer-ts-expect-error':         L.Warn,
-    '@typescript-eslint/require-array-sort-compare':     [L.Error, {
+    '@typescript-eslint/prefer-ts-expect-error': L.Warn,
+    '@typescript-eslint/require-array-sort-compare': [L.Error, {
         ignoreStringArrays: true,
     }],
     '@typescript-eslint/restrict-plus-operands': [L.Error, {
-        checkCompoundAssignments: true,
+        allowBoolean: false,
+        allowNullish: false,
+        allowNumberAndString: false,
+        allowRegExp: false,
     }],
     '@typescript-eslint/restrict-template-expressions': [L.Error, {
-        allowNumber:  true,
+        allowNumber: true,
         allowBoolean: true,
-        allowAny:     false,
+        allowAny: false,
         allowNullish: false,
     }],
     '@typescript-eslint/strict-boolean-expressions': [L.Error, {
-        allowAny:             false,
-        allowNumber:          true,
-        allowString:          true,
-        allowNullableNumber:  false,
-        allowNullableString:  false,
+        allowAny: false,
+        allowNumber: true,
+        allowString: true,
+        allowNullableNumber: false,
+        allowNullableString: false,
         allowNullableBoolean: true,
-        allowNullableObject:  true,
+        allowNullableObject: true,
     }],
     '@typescript-eslint/switch-exhaustiveness-check': L.Warn,
-    '@typescript-eslint/type-annotation-spacing':     L.Error,
-    '@typescript-eslint/unbound-method':              [L.Error, {
+    '@typescript-eslint/type-annotation-spacing': L.Error,
+    '@typescript-eslint/unbound-method': [L.Error, {
         ignoreStatic: true,
     }],
-    '@typescript-eslint/unified-signatures':            L.Warn,
+    '@typescript-eslint/unified-signatures': L.Warn,
     '@typescript-eslint/explicit-function-return-type': [L.Off, {
-        allowExpressions:                                     false,
-        allowTypedFunctionExpressions:                        true,
-        allowHigherOrderFunctions:                            true,
-        allowDirectConstAssertionInArrowFunctions:            true,
+        allowExpressions: false,
+        allowTypedFunctionExpressions: true,
+        allowHigherOrderFunctions: true,
+        allowDirectConstAssertionInArrowFunctions: true,
         allowConciseArrowFunctionExpressionsStartingWithVoid: true,
     }],
     '@typescript-eslint/no-confusing-non-null-assertion': L.Warn,
-    '@typescript-eslint/no-implicit-any-catch':           L.Error,
-    '@typescript-eslint/no-this-alias':                   [L.Error, {
+    '@typescript-eslint/no-this-alias': [L.Error, {
         allowDestructuring: true,
-        allowedNames:       [],
+        allowedNames: [],
     }],
     '@typescript-eslint/no-unnecessary-type-constraint': L.Error,
-    '@typescript-eslint/naming-convention':              [
+    '@typescript-eslint/naming-convention': [
         L.Warn,
         {
             selector: 'default',
-            format:   [
+            format: [
                 'camelCase',
             ],
             leadingUnderscore: 'allowSingleOrDouble',
         },
         {
             selector: ['typeLike', 'enumMember'],
-            format:   [
+            format: [
                 'PascalCase',
             ],
         },
         {
             selector: 'variableLike',
-            format:   [
+            format: [
                 'camelCase',
             ],
             leadingUnderscore: 'allowSingleOrDouble',
         },
         {
             selector: 'memberLike',
-            format:   [
+            format: [
                 'camelCase',
                 'PascalCase',
                 'UPPER_CASE',
@@ -165,17 +167,17 @@ const rules: TypescriptRules = {
             leadingUnderscore: 'allowSingleOrDouble',
         },
         {
-            selector:  'memberLike',
+            selector: 'memberLike',
             modifiers: ['requiresQuotes'],
-            format:    [],
-            custom:    {
+            format: [],
+            custom: {
                 regex: '.*',
                 match: true,
             },
         },
         {
             selector: 'variable',
-            format:   [
+            format: [
                 'camelCase',
                 'PascalCase',
                 'UPPER_CASE',
@@ -187,7 +189,7 @@ const rules: TypescriptRules = {
         },
         {
             selector: 'variable',
-            format:   [
+            format: [
                 'camelCase',
                 'PascalCase',
                 'snake_case',
@@ -199,26 +201,46 @@ const rules: TypescriptRules = {
             leadingUnderscore: 'allowSingleOrDouble',
         },
     ],
-    '@typescript-eslint/no-unnecessary-type-arguments':        L.Off,
-    '@typescript-eslint/consistent-type-definitions':          L.Off,
-    '@typescript-eslint/no-base-to-string':                    L.Off,
-    '@typescript-eslint/no-dynamic-delete':                    L.Off,
-    '@typescript-eslint/no-non-null-assertion':                L.Off,
-    '@typescript-eslint/no-parameter-properties':              L.Off,
-    '@typescript-eslint/no-require-imports':                   L.Off,
-    '@typescript-eslint/no-type-alias':                        L.Off,
-    '@typescript-eslint/no-unnecessary-qualifier':             L.Off,
-    '@typescript-eslint/no-var-requires':                      L.Off,
-    '@typescript-eslint/prefer-enum-initializers':             L.Off,
-    '@typescript-eslint/prefer-namespace-keyword':             L.Off,
-    '@typescript-eslint/prefer-readonly-parameter-types':      L.Off,
-    '@typescript-eslint/prefer-reduce-type-parameter':         L.Off,
-    '@typescript-eslint/prefer-regexp-exec':                   L.Off,
-    '@typescript-eslint/promise-function-async':               L.Off,
+    '@typescript-eslint/consistent-generic-constructors': [L.Error, 'constructor'],
+    '@typescript-eslint/consistent-type-exports': [L.Warn, {
+        fixMixedExportsWithInlineTypeSpecifier: true,
+    }],
+    '@typescript-eslint/no-import-type-side-effects': L.Warn,
+    '@typescript-eslint/no-mixed-enums': L.Warn,
+    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': L.Error,
+    '@typescript-eslint/no-duplicate-enum-values': L.Error,
+    '@typescript-eslint/no-duplicate-type-constituents': L.Error,
+    '@typescript-eslint/no-redundant-type-constituents': L.Error,
+    '@typescript-eslint/no-unsafe-argument': L.Warn,
+    '@typescript-eslint/no-unsafe-enum-comparison': L.Error,
+    '@typescript-eslint/no-unsafe-unary-minus': L.Error,
+    '@typescript-eslint/no-useless-empty-export': L.Warn,
+    '@typescript-eslint/no-useless-template-literals': L.Warn,
+    '@typescript-eslint/prefer-return-this-type': L.Warn,
+    '@typescript-eslint/no-unnecessary-type-arguments': L.Off,
+    '@typescript-eslint/consistent-type-definitions': L.Off,
+    '@typescript-eslint/no-base-to-string': L.Off,
+    '@typescript-eslint/no-dynamic-delete': L.Off,
+    '@typescript-eslint/no-non-null-assertion': L.Off,
+    '@typescript-eslint/no-parameter-properties': L.Off,
+    '@typescript-eslint/no-require-imports': L.Off,
+    '@typescript-eslint/no-type-alias': L.Off,
+    '@typescript-eslint/no-unnecessary-qualifier': L.Off,
+    '@typescript-eslint/no-var-requires': L.Off,
+    '@typescript-eslint/prefer-enum-initializers': L.Off,
+    '@typescript-eslint/prefer-namespace-keyword': L.Off,
+    '@typescript-eslint/prefer-readonly-parameter-types': L.Off,
+    '@typescript-eslint/prefer-reduce-type-parameter': L.Off,
+    '@typescript-eslint/prefer-regexp-exec': L.Off,
+    '@typescript-eslint/promise-function-async': L.Off,
     '@typescript-eslint/sort-type-union-intersection-members': L.Off,
-    '@typescript-eslint/triple-slash-reference':               L.Off,
-    '@typescript-eslint/typedef':                              L.Off,
-    '@typescript-eslint/member-ordering':                      L.Off,
+    '@typescript-eslint/triple-slash-reference': L.Off,
+    '@typescript-eslint/typedef': L.Off,
+    '@typescript-eslint/member-ordering': L.Off,
+    '@typescript-eslint/no-meaningless-void-operator': L.Off,
+    '@typescript-eslint/no-unsafe-declaration-merging': L.Off,
+    '@typescript-eslint/parameter-properties': L.Off,
+    '@typescript-eslint/sort-type-constituents': L.Off,
 };
 
 export default rules;

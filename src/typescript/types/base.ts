@@ -117,9 +117,6 @@ export type TypescriptRules = PrefixedRuleSet<'@typescript-eslint', {
         ignoreIIFE?: boolean;
     }]>;
     'no-for-in-array': Linter.RuleEntry;
-    'no-implicit-any-catch': Linter.RuleEntry<[{
-        allowExplicitAny?: boolean;
-    }]>;
     'no-inferrable-types': Linter.RuleEntry<[{
         ignoreParameters?: boolean;
         ignoreProperties?: boolean;
@@ -211,7 +208,18 @@ export type TypescriptRules = PrefixedRuleSet<'@typescript-eslint', {
         ignoreStringArrays?: boolean;
     }]>;
     'restrict-plus-operands': Linter.RuleEntry<[{
-        checkCompoundAssignments?: boolean;
+        /** Whether to allow `any` typed values. */
+        allowAny?: boolean;
+        /** Whether to allow `boolean` typed values. */
+        allowBoolean?: boolean;
+        /** Whether to allow potentially `null` or `undefined` typed values. */
+        allowNullish?: boolean;
+        /** Whether to allow `bigint`/`number` typed values and `string` typed values to be added together. */
+        allowNumberAndString?: boolean;
+        /** Whether to allow `regexp` typed values. */
+        allowRegExp?: boolean;
+        /** Whether to skip compound assignments such as `+=`. */
+        skipCompoundAssignments?: boolean;
     }]>;
     'restrict-template-expressions': Linter.RuleEntry<[{
         allowNumber?: boolean;
@@ -272,4 +280,36 @@ export type TypescriptRules = PrefixedRuleSet<'@typescript-eslint', {
         ignoreStatic?: boolean;
     }]>;
     'unified-signatures': Linter.RuleEntry;
+    'consistent-generic-constructors': Linter.RuleEntry<['constructor' | 'type-annotation']>;
+    'consistent-type-exports': Linter.RuleEntry<[{
+        fixMixedExportsWithInlineTypeSpecifier?: boolean;
+    }]>;
+    'no-duplicate-enum-values': Linter.RuleEntry;
+    'no-duplicate-type-constituents': Linter.RuleEntry<[{
+        ignoreIntersections?: boolean;
+        ignoreUnions?: boolean;
+    }]>;
+    'no-import-type-side-effects': Linter.RuleEntry;
+    'no-meaningless-void-operator': Linter.RuleEntry;
+    'no-mixed-enums': Linter.RuleEntry;
+    'no-non-null-asserted-nullish-coalescing': Linter.RuleEntry;
+    'no-redundant-type-constituents': Linter.RuleEntry;
+    'no-unsafe-argument': Linter.RuleEntry;
+    'no-unsafe-declaration-merging': Linter.RuleEntry;
+    'no-unsafe-enum-comparison': Linter.RuleEntry;
+    'no-unsafe-unary-minus': Linter.RuleEntry;
+    'no-useless-empty-export': Linter.RuleEntry;
+    'no-useless-template-literals': Linter.RuleEntry;
+    'parameter-properties': Linter.RuleEntry<[{
+        allow?: ('private readonly'
+        | 'private'
+        | 'protected readonly'
+        | 'protected'
+        | 'public readonly'
+        | 'public'
+        | 'readonly')[];
+        prefer?: 'class-property' | 'parameter-property';
+    }]>;
+    'prefer-return-this-type': Linter.RuleEntry;
+    'sort-type-constituents': Linter.RuleEntry;
 }> & NamingConventionRule & MemberOrderingRule;

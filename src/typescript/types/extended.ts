@@ -35,7 +35,6 @@ export type TypescriptExtRules = PrefixedRuleSet<'@typescript-eslint', {
 
     'no-array-constructor':  ESLintRules['no-array-constructor'];
     'no-dupe-class-members': ESLintRules['no-dupe-class-members'];
-    'no-duplicate-imports':  ESLintRules['no-duplicate-imports'];
     'no-empty-function':     RuleWithConfig<{
         allow: (
             | NonNullable<NonNullable<GetESLintRuleOptions<'no-empty-function'>>['allow']>[number]
@@ -82,4 +81,11 @@ export type TypescriptExtRules = PrefixedRuleSet<'@typescript-eslint', {
     'semi':                        ESLintRules['semi'];
     'space-before-function-paren': ESLintRules['space-before-function-paren'];
     'space-infix-ops':             ESLintRules['space-infix-ops'];
+    'class-methods-use-this':      Linter.RuleEntry<[GetESLintRuleOptions<'class-methods-use-this'> & {
+        ignoreOverrideMethods?: boolean;
+        ignoreClassesThatImplementAnInterface?: boolean | 'public-fields';
+    }]>;
+    'max-params': ESLintRules['max-params'];
+    'no-restricted-imports': ESLintRules['no-restricted-imports'];
+    'prefer-destructuring': ESLintRules['prefer-destructuring'];
 }>;
